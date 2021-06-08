@@ -163,7 +163,7 @@ var len = 15
 router.get('/find', async (req, res, next) => {
     var apikey = req.query.apikey
     if (!apikey) return res.json(loghandler.notparam)
-    if (apikey != 'Kuv-Api') return res.json(loghandler.invalidKey)
+    if (apikey != 'RrZNKLMc') return res.json(loghandler.invalidKey)
 
     try {
         zahirr.find()
@@ -342,7 +342,7 @@ router.get('/randomquote', async (req, res, next) => {
         var apikeyInput = req.query.apikey
             
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'Kuv-Api') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'RrZNKLMc') return res.json(loghandler.invalidKey)
 
        fetch(encodeURI(`https://python-api-zhirrr.herokuapp.com/api/random/quotes`))
         .then(response => response.json())
