@@ -263,7 +263,7 @@ router.get('/remove', (req, res, next) => {
 
     if (!apikey) return res.json(loghandler.notparam)
     if (!(status && apikeyInput && email && nomorhp && name && age && country && exp)) return res.json(loghandler.notAddApiKey)
-    if (apikey != 'Kuv-Api') return res.json(loghandler.invalidKey)
+    if (apikey != 'RrZNKLMc') return res.json(loghandler.invalidKey)
 
     try {
         zahirr.remove({
@@ -295,7 +295,7 @@ router.get('/tiktod', async (req, res, next) => {
 
 
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'Kuv-Api') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'RrZNKLMc') return res.json(loghandler.invalidKey)
      if (!url) return res.json(loghandler.noturl)
 
      TikTokScraper.getVideoMeta(url, options)
@@ -317,7 +317,7 @@ router.get('/tiktod/stalk', async (req, res, next) => {
         username = req.query.username
 
 	if(!apikeyInput) return res.json(loghandler.notparam)
-	if(apikeyInput != 'Kuv-Api') return res.json(loghandler.invalidKey)
+	if(apikeyInput != 'RrZNKLMc') return res.json(loghandler.invalidKey)
     if (!username) return res.json(loghandler.notusername)
 
 
