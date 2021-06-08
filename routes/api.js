@@ -224,7 +224,7 @@ router.get('/addapikey', (req, res, next) => {
 
     if (!apikey) return res.json(loghandler.notparam)
     if (!(status && apikeyInput && email && nomorhp && name && age && country && exp)) return res.json(loghandler.notAddApiKey)
-    if (apikey != 'Kuv-Api') return res.json(loghandler.invalidKey)
+    if (apikey != 'RrZNKLMc') return res.json(loghandler.invalidKey)
 
     try {
         zahirr.insert({
